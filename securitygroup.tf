@@ -4,7 +4,7 @@ data "aws_ip_ranges" "asia_pacific_ec2" {
 }
 
 resource "aws_security_group" "from_asia_pacific" {
-  name = "from_europe"
+  name = "from_asia_pacific" #Security Group Name
 
   ingress {
     from_port   = "443"
